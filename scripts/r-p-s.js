@@ -47,7 +47,7 @@ let score = JSON.parse(localStorage.getItem('score'));
             localStorage.setItem('score',JSON.stringify(score));
             updatescore();
             document.querySelector('.result').innerHTML=`${result}`;
-            moves=`You <img src="icons/${usermove}-emoji.png"> <img src="icons/${comp}-emoji.png"> Computer`;
+            moves=`You <img src="icons/${usermove.toLowerCase()}-emoji.png"> <img src="icons/${comp.toLowerCase()}-emoji.png"> Computer`;
             document.querySelector('.moves').innerHTML=`${moves}`;
 
 
@@ -66,3 +66,4 @@ let score = JSON.parse(localStorage.getItem('score'));
             localStorage.removeItem('score');
              document.querySelector('.scoreboard').innerHTML=`Win: ${score.Win}, Losses: ${score.Losses}, Ties: ${score.Ties}`;
         }
+
