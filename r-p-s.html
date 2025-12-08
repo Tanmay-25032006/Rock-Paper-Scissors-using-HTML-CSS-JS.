@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper Scissor game</title>
+        <link rel="stylesheet" href="styles/r-p-s.css">
+        <style>   
+        </style>
+    </head>
+    <body>
+        <p class="title">Rock Paper Scissor game</p>
+        <button onclick="playgame('Rock')" class="move-button"><img class="move-icon"src="icons/rock-emoji.png"></button>
+        <button onclick="playgame('Paper')" class="move-button"><img class="move-icon"src="icons/paper-emoji.png"></button>
+        <button onclick="playgame('Scissor')" class="move-button"><img class="move-icon"src="icons/scissor-emoji.png"></button>
+        <p class="result"></p>
+        <p class="moves"></p>
+        <p class="scoreboard">Win: 0,Losses: 0,Ties: 0</p>
+        <button onclick="Reset()"class="reset-button">Reset Score</button>
+
+    </body>
+    <script src="scripts/r-p-s.js"> </script> 
+</html>
